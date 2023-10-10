@@ -1,0 +1,3 @@
+ATLAS_URI="mongodb+srv://st10084270:CiqiozAHxW4dKSiw@cluster0.moup3j1.mongodb.net/"
+
+mongodb+srv://st10084270:CiqiozAHxW4dKSiw@cluster0.moup3j1.mongodb.net/
