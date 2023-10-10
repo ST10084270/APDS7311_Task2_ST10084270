@@ -1,0 +1,86 @@
+GET http://localhost:5050 HTTP/1.1
+###
+GET https://localhost:5050 HTTP/1.1
+
+###
+POST https://localhost:5050/user HTTP/1.1
+content-Type: application/json
+
+{
+    "name": "Ash",
+    "password": "youwillneverguess"
+}
+
+###
+POST https://localhost:5050/user/signup HTTP/1.1
+content-Type: application/json
+
+{
+    "name": "Asheena",
+    "password": "psssssword"
+}
+
+###
+POST https://localhost:5050/user/signup HTTP/1.1
+content-Type: application/json
+
+{
+    "name": "Seventeen",
+    "password": "ajuNice"
+}
+
+###
+POST https://localhost:5050/user/login HTTP/1.1
+content-Type: application/json
+
+{
+    "name": "Seventeen",
+    "password": "ajuNice"
+}
+
+###
+POST https://localhost:5050/record/create HTTP/1.1
+content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXNzd29yZCI6ImFqdU5pY2UiLCJpYXQiOjE2OTY5NTI1MzYsImV4cCI6MTY5Njk1NjEzNn0.rW0yuzOoNOOR7NGCmis-BJn_c7PxR694C_Yk2UfNYdI
+
+{
+    "name": "twice",
+    "position": "123456",
+    "level": "once"
+}
+
+###
+GET https://localhost:5050/record HTTP/1.1
+
+###
+GET https://localhost:5050/record HTTP/1.1
+
+###
+PATCH https://localhost:5050/record/6525714999c1ff279c883f75 HTTP/1.1
+content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXNzd29yZCI6ImFqdU5pY2UiLCJpYXQiOjE2OTY5NTI1MzYsImV4cCI6MTY5Njk1NjEzNn0.rW0yuzOoNOOR7NGCmis-BJn_c7PxR694C_Yk2UfNYdI
+
+{
+    "name": "pikachu",
+    "position": "1",
+    "level": "100"
+}
+
+###
+DELETE https://localhost:5050/record/65256cbb99c1ff279c883f73 HTTP/1.1
+content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXNzd29yZCI6ImFqdU5pY2UiLCJpYXQiOjE2OTY5NTE0NTAsImV4cCI6MTY5Njk1NTA1MH0.VXNT3AmKESOjRifYQZA1nuUtCfNhsTllG_DCFfWOCSc
+
+
+###
+PATCH https://localhost:5050/user/650afb57ab7830c22b4972a1 HTTP/1.1
+content-Type: application/json
+
+{
+    "name": "Asha",
+    "password": "youwillneverguess"
+}
+
+###
+DELETE https://localhost:5050/user/650afb57ab7830c22b4972a1 HTTP/1.1
+content-Type: application/json
